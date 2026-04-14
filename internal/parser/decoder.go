@@ -5,7 +5,7 @@ import (
 
 	"github.com/google/gopacket"
 	"github.com/google/gopacket/layers"
-	"github.com/yourusername/packet-sniffer/internal/exporter"
+	"github.com/mtepenner/custom-packet-sniffer/internal/exporter"
 )
 
 // DecodePacket takes a raw gopacket and extracts the relevant layers into our PacketInfo struct.
