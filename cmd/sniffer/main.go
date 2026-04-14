@@ -8,8 +8,8 @@ import (
 	"os/signal"
 	"syscall"
 
-	"github.com/yourusername/packet-sniffer/internal/capture"
-	"github.com/yourusername/packet-sniffer/internal/exporter"
+	"github.com/mtepenner/custom-packet-sniffer/internal/capture"
+	"github.com/mtepenner/custom-packet-sniffer/internal/exporter"
 )
 
 func main() {
