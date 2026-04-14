@@ -36,7 +36,7 @@ Because this project utilizes `gopacket` and `pcap`, you must have the `libpcap`
 
 1. **Clone the repository:**
    ```bash
-   git clone [https://github.com/mtepenner/custom-packet-sniffer.git](https://github.com/mtepenner/custom-packet-sniffer.git)
+   git clone https://github.com/mtepenner/custom-packet-sniffer.git
    cd custom-packet-sniffer
    ```
 
