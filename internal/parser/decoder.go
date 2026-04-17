@@ -10,8 +10,13 @@ import (
 
 // DecodePacket takes a raw gopacket and extracts the relevant layers into our PacketInfo struct.
 func DecodePacket(packet gopacket.Packet) exporter.PacketInfo {
+	// Use nanosecond precision to accurately represent the packet capture time.
+	ts := packet.Metadata().Timestamp
+	if ts.IsZero() {
+		ts = time.Now()
+	}
 	info := exporter.PacketInfo{
-		Timestamp: time.Now().Format(time.RFC3339),
+		Timestamp: ts.UTC().Format(time.RFC3339Nano),
 		Length:    packet.Metadata().Length,
 	}
 

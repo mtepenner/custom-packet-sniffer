@@ -5,8 +5,8 @@ import (
 
 	"github.com/google/gopacket"
 	"github.com/google/gopacket/pcap"
-	"github.com/yourusername/packet-sniffer/internal/exporter"
-	"github.com/yourusername/packet-sniffer/internal/parser"
+	"github.com/mtepenner/custom-packet-sniffer/internal/exporter"
+	"github.com/mtepenner/custom-packet-sniffer/internal/parser"
 )
 
 // StartLiveCapture opens a network interface and begins reading packets.
